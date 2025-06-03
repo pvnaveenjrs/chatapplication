@@ -24,7 +24,7 @@ export const ChatContextProvider = ({ children, user }) => {
 useEffect(() => {
   const newSocket = io(
     import.meta.env.MODE === "production"
-      ? "https://realtimechat-1-gpm1.onrender.com"  // Your Render backend URL
+      ? "https://chatapplication-9tfv.onrender.com"  // Your Render backend URL
       : "http://localhost:5000",                   // Should match your local backend port
     {
       withCredentials: true,
