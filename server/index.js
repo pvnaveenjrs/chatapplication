@@ -33,6 +33,8 @@ const io = new Server(httpServer,{
   }
 });
 
+app.use(cors());
+
 // Connect to database
 connectDB();
 
