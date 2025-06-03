@@ -24,7 +24,7 @@ const httpServer = createServer(app);
 const io = new Server(httpServer,{
   cors: {
     origin: [
-      'https://chatapplication-mocha.vercel.app',
+      'https://chatapplication-theta-six.vercel.app/',
       'https://chatapplication-9tfv.onrender.com',
       'http://localhost:5173'
     ],
@@ -41,7 +41,7 @@ connectDB();
 app.use(express.json());
 const corsOptions = {
   origin: [
-    'https://chatapplication-mocha.vercel.app', // Your Vercel frontend
+    'https://chatapplication-theta-six.vercel.app', // Your Vercel frontend
     'https://chatapplication-9tfv.onrender.com', // Your Render backend
     'http://localhost:5173' // For local development
   ],
